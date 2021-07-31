@@ -4,7 +4,7 @@
 Hanga Ngatahi "Build it Together" is a project and programme for promoting the collaborative construction of data science units and the use of data science as as service.
 The purpose is to build software and workflows to enable any group in the community to establish themselves as a modern data science unit. In New Zealand this includes all members of the community including the iwi and general tangata whenua "people of the land" and this programme follows the principles of Te Tiriti.
 
-There are a number streams (sub-projects) including:
+There are a number of streams (sub-projects) including:
 
 - The NLP Pipeline - software and workflows to process textual data
 - The Graph Pipeline - software and workflows to convert relationships in data into graphs
