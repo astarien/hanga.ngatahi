@@ -11,7 +11,7 @@ There are a number streams (sub-projects) including:
 - The Path Analysis Pipeline - software and workflows to convert data into nodes and flows to be visualized in Sankey diagrams
 - The Document Pipeline - software and workflows to convert documents from unstructured format to structured/tabular format and maintain data content across forms
 
-More streams may be added.
+More streams may be added. Further documentation on how this system works is [here](how.it.works.md)
 
 This project is owned by the community under the GPL 3.0. It was first established on Friday 30th July 2021 at 5:41pm.
 
