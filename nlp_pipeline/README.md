@@ -1,6 +1,8 @@
 # The NLP Pipeline
 
-The NLP Pipeline consists of the main.py file which instantiate a PipelineProcessor.NLPProcessor class and calls the following pipeline stage methods on it.
+The NLP pipeline implements a process for using software to process unstructured and textual data through a number of standard stages using Natural Language Processing.
+
+The pipeline consists of the main.py file which instantiate a PipelineProcessor.NLPProcessor class and calls the following pipeline stage methods on it.
 
 - **load_config** a subclass of Implementer.Configurator called NLPConfigurator will read in a YAML configuration file and any command-line overriding parameters and set up a Implementable.Configurated.NLPConfigurated object called config
 - **load_data** a class Implementer.DataLoader.NLPDataLoader will load in the data given in the directory and file in the config object and produce a Implemented.DataLoaded.NLPDataLoaded object containing the data

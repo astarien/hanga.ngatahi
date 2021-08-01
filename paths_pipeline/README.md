@@ -1,6 +1,8 @@
 # The Paths Pipeline
 
-The Paths Pipeline consists of the main.py file which instantiate a PipelineProcessor.PathsPipelineProcessor class and calls the following pipeline stage methods on it.
+The Paths Pipeline implements a process for converted data into node and flows format (often JSON) for use with path analysis and sankey diagram generator tools. The data is taken through a number of standard stages which also allow for filtering and analysis.
+
+The pipeline consists of the main.py file which instantiate a PipelineProcessor.PathsPipelineProcessor class and calls the following pipeline stage methods on it.
 
 - **load_config** a subclass of Implementer.Configurator called PathsConfigurator will read in a YAML configuration file and any command-line overriding parameters and set up a Implemented.Configurated.PathsConfigurated object called config
 - **load_data** a class Implementer.DataLoader.PathsDataLoader will load in the data given in the directory and file in the config object and produce a Implemented.DataLoaded.PathsDataLoaded object containing the data
