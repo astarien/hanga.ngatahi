@@ -25,7 +25,24 @@ The meaning of each Implementer and Implemented object will depend on which pipe
 
 For example, there could be for the graph pipeline and the convert data stage a GDFGraphConverter and GDFConverted Implementer/Implemented pair. Not all pipelines will call all the stage methods and not all stage methods for a particular pipeline Processor will do anything.
 
-The main scripts for each pipeline live in directories called <type>_pipeline for example nlp_pipeline. The objects and classes live in a main module called classes.
+The main scripts for each pipeline live in directories called <type>_pipeline for example nlp_pipeline. The objects and classes live in a main module called **pipeline_classes**.
   
+## How can these pipelines be used
+  
+1. One way to use these pipelines is on a dedicated server
+  - set up an input and output directory
+  - install pip and the requirements.txt file
+  - install the pipeline scripts in a dedicated directory 
+  - create a configuration file and data file and place these in the input directory
+  - run the main.py script
+
+2. Run the pipeline on AWS
+  - set up an input and output S3 bucket
+  - set up a ECS container with the pip requirements file and the main.py script and pipeline classes module
+  - create a configuration file and data file and place in the input bucket
+  - install a task to run the ECS container periodically watching the input bucket
+  - (optionally) you could use a lambda if you know that main.py will only take at most 15 minutes
+
+
 
 
