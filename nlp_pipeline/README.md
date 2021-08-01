@@ -10,7 +10,7 @@ The NLP Pipeline consists of the main.py file which instantiate a PipelineProces
 - **convert_data** instantiates a Implementer.Converter.NLPCOnverter object given a parameter in the config object specifying the class, reads in the data from NLPDataLoaded and produces a Implemented.Converted.NLPConverted object
   - This may involve a Implementer.Converter.NLPConverter.GensimNMFModelConverter and produce a Implemented.Converted.NLPConverted.GensimNMLConverted object
 - **build_report** which instantiates a Implementer.Reporter.NLPReporter object which takes as input a NLPConverted object and produces a Implemented.Reported.NLPReported object
-  - A Implemented.Exportable.NLPExportable object is created and the NLPReported object is assigned to this 
+  - A Implementable.Exportable.NLPExportable object is created and the NLPReported object is assigned to this 
   - optionally the NLPDataLoaded or the NLPCOnverted objects may be assigned to the NLPExportable object
 - **export_data** which instantiates a Implementer.Exporter.NLPExporter object which takes as input a NLPExportable object and exports it to a given set of directories
 
