@@ -15,5 +15,7 @@ More streams may be added. Further documentation on how this system works is [he
 
 This project is owned by the community under the GPL 3.0. It was first established on Friday 30th July 2021 at 5:41pm.
 
+Any copyright not included in the GPL is held by the author Andrew Probert 2021
+
 
 ...
