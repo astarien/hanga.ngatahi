@@ -25,7 +25,7 @@ The meaning of each Implementer and Implemented object will depend on which pipe
 
 For example, there could be for the graph pipeline and the convert data stage a GDFGraphConverter and GDFConverted Implementer/Implemented pair. Not all pipelines will call all the stage methods and not all stage methods for a particular pipeline Processor will do anything.
 
-The main scripts for each pipeline live in directories called <type>_pipeline for example nlp_pipeline. The objects and classes live in a main module called classes.
+The main scripts for each pipeline live in directories called <type>_pipeline for example nlp_pipeline. The objects and classes live in a main module called **pipeline_classes**.
   
 ## How can these pipelines be used
   
