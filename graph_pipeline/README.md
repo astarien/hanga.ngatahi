@@ -1,6 +1,8 @@
 # The Graph Pipeline
 
-The Graph Pipeline consists of the main.py file which instantiate a PipelineProcessor.GraphPipelineProcessor class and calls the following pipeline stage methods on it.
+The Graph Pipeline implements a process that will convert and analyze graph theoretic data producing either or both output formatted and data and reports. The data will be taken through a number of standard stages.
+
+The pipeline consists of the main.py file which instantiate a PipelineProcessor.GraphPipelineProcessor class and calls the following pipeline stage methods on it.
 
 - **load_config** a subclass of Implementer.Configurator called GraphConfigurator will read in a YAML configuration file and any command-line overriding parameters and set up a Implemented.Configurated.GraphConfigurated object called config
 - **load_data** a class Implementer.DataLoader.GraphDataLoader will load in the data given in the directory and file in the config object and produce a Implemented.DataLoaded.GraphDataLoaded object containing the data

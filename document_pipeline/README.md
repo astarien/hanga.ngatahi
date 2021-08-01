@@ -1,6 +1,8 @@
 # The Document Pipeline
 
-The Document Pipeline consists of the main.py file which instantiate a PipelineProcessor.DocumentPipelineProcessor class and calls the following pipeline stage methods on it.
+The Document Pipeline implements a process for converting unstructured or NoSQL data (possibly in JSON format) into structured or tabular format and vice versa using a number of standard stages. The data may also be filtered and analyzed in the process.
+
+The pipeline consists of the main.py file which instantiate a PipelineProcessor.DocumentPipelineProcessor class and calls the following pipeline stage methods on it.
 
 - **load_config** a subclass of Implementer.Configurator called DocumentConfigurator will read in a YAML configuration file and any command-line overriding parameters and set up a Implemented.Configurated.DocumentConfigurated object called config
 - **load_data** a class Implementer.DataLoader.DocumentDataLoader will load in the data given in the directory and file in the config object and produce a Implemented.DataLoaded.DocumentDataLoaded object containing the data
