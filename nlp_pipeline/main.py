@@ -23,10 +23,12 @@ if __name__ == "__main__":
   
   # Stage 4 - convert the data (optional)
   if config.do_convert():
-    exported = processor.convert(exported, config)
+    converteddata = processor.convert(data, config)
+    exported.add(converteddata)
   
   # Stage 5 - build the report
-  exported = processor.report(exported, config)
+  report = processor.report(data, converteddata, config)
+  exported.add(report)
   
   # Stage 6 - do the export
   processor.export(exported, config)
