@@ -1,6 +1,6 @@
 #
 import implementers, implemented
-import implementables.exportables as exportable
+import implementables.exportables as exportables
 
 def load.config():
   
