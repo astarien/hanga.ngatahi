@@ -1,6 +1,6 @@
 #
 import implementers, implemented
-
+import implementables.exportables as exportable
 
 def load.config():
   
@@ -32,5 +32,19 @@ def prepare(data):
 def convert(data):
   
   converteddata = implementers.DataConverter(data)
-               
+  exported = exportables.Exportable()
+  exported.add(converteddata)
+  
+  return exported
+
+def report(data, exported):
+  
+  report = implementers.Reporter(data, exported.converted())
+  exported.add(report)
+  
+  return exported
+
+def export(exported):
+  
+  return
   
