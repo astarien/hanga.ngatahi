@@ -29,19 +29,15 @@ def prepare(data, config):
   
   return data
 
-def convert(exported, config):
+def convert(data, config):
   
-  converteddata = implementers.DataConverter(exported.get(0))
-  exported.add(converteddata)
-  
-  return exported
+  converteddata = implementers.DataConverter(data)
+  return converteddata
 
-def report(exported, config):
+def report(data, converteddata, config):
   
-  report = implementers.Reporter(exported.get(0), exported.get(1))
-  exported.add(report)
-  
-  return exported
+  report = implementers.Reporter(data, converteddata)
+  return report
 
 def export(exported, config):
   
